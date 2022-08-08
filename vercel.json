@@ -3,7 +3,7 @@
   "scope": "rubynor",
   "alias": ["bigfive-test.com"],
   "env": {
-    "MONGODB_URI": "@mongodb_uri",
+    "MONGODB_URI": "mongodb+srv://bkar:nh2conh2cuso4@cluster0.d8sxr.mongodb.net",
     "MONGODB_COLLECTION": "results",
     "BASE_URL": "https://bigfive-test.com"
   },
@@ -12,9 +12,7 @@
       "src": "nuxt.config.js",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": [
-          "content/**"
-        ]
+        "serverFiles": ["content/**"]
       }
     },
     {
@@ -47,10 +45,10 @@
   "headers": [
     {
       "source": "/api/(.*)",
-      "headers" : [
+      "headers": [
         {
-          "key" : "Access-Control-Allow-Origin",
-          "value" : "*"
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         },
         {
           "key": "Access-Control-Allow-Headers",
