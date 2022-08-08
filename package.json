@@ -39,6 +39,7 @@
     "nuxt-i18n": "6.20.2",
     "nuxt-webfontloader": "1.1.0",
     "svg-country-flags": "1.2.10",
+    "vercel": "^27.3.7",
     "vue-amplitude": "1.0.3",
     "vue-apexcharts": "1.6.0",
     "vue-confetti": "2.2.1",
