@@ -1,45 +1,38 @@
 <template>
   <div>
-    <v-app-bar
-      app
-      color="white"
-      class="app-bar-shadow"
-    >
+    <v-app-bar app color="white" class="app-bar-shadow">
       <div class="toolbar-wrapper">
         <div class="d-flex align-center">
-          <nuxt-link :to="localePath('/')">
-            <transition
-              appear
-              name="rotate"
-            >
+          <a href="https://www.tapartners.org/">
+            <transition appear name="rotate">
               <v-img
                 alt="BigFive logo"
-                class="shrink mr-2"
+                class="shrink mr-2 logo-header"
                 contain
                 :src="logoSrc"
                 transition="fade-transition"
-                width="40"
+                width="200"
               />
             </transition>
-          </nuxt-link>
+          </a>
         </div>
         <v-spacer />
-        <v-btn
+        <!-- <v-btn
           text
           :to="localePath('result')"
           class="hidden-sm-and-down text-none font-weight-regular"
         >
           {{ $t('toolbar.see_results') }}
-        </v-btn>
-        <v-btn
+        </v-btn> -->
+        <!-- <v-btn
           text
           :to="localePath('compare')"
           class="hidden-sm-and-down text-none font-weight-regular"
         >
           {{ $t('toolbar.compare_with') }}
-        </v-btn>
-        <LanguageSwitcher />
-        <v-menu
+        </v-btn> -->
+        <!-- <LanguageSwitcher /> -->
+        <!-- <v-menu
           v-model="drawer"
           bottom
           offset-y
@@ -72,48 +65,49 @@
               {{ item.title }}
             </v-list-item>
           </v-list>
-        </v-menu>
+        </v-menu> -->
       </div>
     </v-app-bar>
   </div>
 </template>
 
 <script>
-import { mdiMenu } from '@mdi/js'
+import { mdiMenu } from "@mdi/js";
 
 export default {
-  components: {
-    LanguageSwitcher: () => import('./LanguageSwitcher')
-  },
-  data: function () {
-    const icons = { mdiMenu }
+  // components: {
+  //   LanguageSwitcher: () => import('./LanguageSwitcher')
+  // },
+  data: function() {
+    const icons = { mdiMenu };
     return {
       drawer: false,
-      logoSrc: require('@/assets/logo.svg'),
+      logoSrc: require("@/assets/TAP_PNG.png"),
       icons
-    }
+    };
   },
   computed: {
-    items () {
+    items() {
       return [
-        { title: this.$t('toolbar.result'), url: '/result' },
-        { title: this.$t('toolbar.compare'), url: '/compare' },
-        { title: this.$t('toolbar.articles'), url: '/articles' },
-        { title: this.$t('toolbar.privacy'), url: '/privacy' },
-        { title: this.$t('toolbar.about'), url: '/about' },
-        { title: 'FAQ', url: '/faq' }
-      ]
+        { title: this.$t("toolbar.result"), url: "/result" },
+        { title: this.$t("toolbar.compare"), url: "/compare" },
+        { title: this.$t("toolbar.articles"), url: "/articles" },
+        { title: this.$t("toolbar.privacy"), url: "/privacy" },
+        { title: this.$t("toolbar.about"), url: "/about" },
+        { title: "FAQ", url: "/faq" }
+      ];
     }
   }
-}
-
+};
 </script>
 
 <style>
 .app-bar-shadow {
-  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1) !important;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1) !important;
 }
-
+.logo-header {
+  width: 100px;
+}
 .toolbar-wrapper {
   display: flex;
   flex-direction: row;
@@ -124,14 +118,18 @@ export default {
 }
 
 @keyframes spinHorizontal {
-  0% { transform: rotateY(0deg); }
-  100% { transform: rotateY(360deg); }
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 .rotate-enter-active {
   animation: spinHorizontal 1s;
 }
 
 .v-menu__content {
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.02) !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.02) !important;
 }
 </style>

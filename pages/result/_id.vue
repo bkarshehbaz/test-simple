@@ -14,110 +14,125 @@
           </span>
         </v-col>
         <v-col>
-          <p
-            v-if="metadata.timestamp"
-            class="text-right grey--text"
-          >
+          <p v-if="metadata.timestamp" class="text-right grey--text">
             {{ new Date(metadata.timestamp).toLocaleString() }}
           </p>
         </v-col>
       </v-row>
 
       <div class="text-center mt-10">
-        <b>{{ $t('results.important') }}</b> {{ $t('results.saveResults') }} <nuxt-link :to="localePath('compare')">
-          {{ $t('results.compare') }}
-        </nuxt-link> {{ $t('results.toOthers') }}
-        <br>
-        <br>
-        <v-alert
-          outlined
-          color="secondary"
-        >
+        <!-- <b>{{ $t("results.important") }}</b> {{ $t("results.saveResults") }}
+        <nuxt-link :to="localePath('compare')">
+          {{ $t("results.compare") }}
+        </nuxt-link> -->
+        <!-- {{ $t("results.toOthers") }} -->
+        <br />
+        <br />
+        <!-- <v-alert outlined color="secondary">
           <span
             class="secondary--text headline"
-            :class="{'title': $vuetify.breakpoint.xs}"
-          >{{ $route.params.id }}</span>
-        </v-alert>
-        <ShareLinks :id="'result/' + $route.params.id" />
+            :class="{ title: $vuetify.breakpoint.xs }"
+            >{{ $route.params.id }}</span
+          >
+        </v-alert> -->
+        <!-- <ShareLinks :id="'result/' + $route.params.id" /> -->
       </div>
 
       <div class="display-1 mt-6">
-        {{ $t('results.theBigFive') }}
+        {{ $t("results.theBigFive") }}
       </div>
-      <BarChart
-        :data="results"
-        :max="Number(120)"
-      />
-      <div
-        v-for="domain in results"
-        :key="domain.id"
-      >
+      <BarChart :data="results" :max="Number(120)" />
+      <div v-for="domain in results" :key="domain.id">
         <Domain :domain="domain" />
       </div>
-      <br>
-      <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
-      <ShareLinks :id="'result/' + $route.params.id" />
+      <br />
+      <!-- <span class="headline">{{ $t("shareLinks.shareResults") }}</span>
+      <ShareLinks :id="'result/' + $route.params.id" /> -->
     </div>
     <Error v-else />
   </v-container>
 </template>
 
 <script>
-import { mdiMenuDown } from '@mdi/js'
+import { mdiMenuDown } from "@mdi/js";
 
 export default {
-  name: 'Result',
-  async asyncData ({ params, store, $axios, query }) {
+  name: "Result",
+  async asyncData({ params, store, $axios, query }) {
     try {
-      const lang = query.lang ? `/${query.lang}` : ''
-      const url = process.env.API_URL + 'result/' + params.id + lang
+      const lang = query.lang ? `/${query.lang}` : "";
+      const url = process.env.API_URL + "result/" + params.id + lang;
 
-      const data = await $axios.$get(url)
+      const data = await $axios.$get(url);
 
       return {
         results: data.results,
         metadata: {
           timestamp: data.timestamp,
-          language: query.lang || data.language || 'en',
+          language: query.lang || data.language || "en",
           availableLanguages: data.availableLanguages
         }
-      }
+      };
     } catch (error) {
-      console.log(error)
-      store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
+      console.log(error);
+      store.commit("SET_SNACKBAR", { msg: error.message, type: "error" });
     }
   },
   data: () => ({
     results: false,
     mdiMenuDown
   }),
-  head () {
+  head() {
     return {
-      title: this.$t('results.seo.title'),
+      title: this.$t("results.seo.title"),
       meta: [
-        { hid: 'title', name: 'title', content: this.$t('results.seo.title') },
-        { hid: 'description', name: 'description', content: this.$t('results.seo.description') },
-        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        { hid: "title", name: "title", content: this.$t("results.seo.title") },
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("results.seo.description")
+        },
+        { hid: "keywords", name: "keywords", content: this.$t("seo.keywords") },
         // Open Graph
-        { hid: 'og:title', name: 'og:title', content: this.$t('results.seo.title') },
-        { hid: 'og:description', name: 'og:description', content: this.$t('results.seo.description') },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('results.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('results.seo.description') }
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: this.$t("results.seo.title")
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.$t("results.seo.description")
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("results.seo.title")
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("results.seo.description")
+        }
       ]
-    }
+    };
   },
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.test', { part: 'result' })
+  mounted() {
+    this.$amplitude.getInstance().logEvent("b5.test", { part: "result" });
   },
   methods: {
-    changeLanguage (lang) {
+    changeLanguage(lang) {
       this.$router.replace(
-        { pathname: '/result', params: { id: this.$route.params.id }, query: { lang } },
+        {
+          pathname: "/result",
+          params: { id: this.$route.params.id },
+          query: { lang }
+        },
         () => {
-          this.$router.go(0)
+          this.$router.go(0);
         }
-      )
+      );
     }
   }
-}
+};
 </script>

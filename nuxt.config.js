@@ -326,7 +326,7 @@ export default {
       themes: {
         light: {
           primary: "#000000",
-          secondary: "#ff0080",
+          secondary: "#3b88b2",
           accent: "#607d8b",
           error: "#f44336",
           warning: "#ff9800",

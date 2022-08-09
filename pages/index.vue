@@ -1,18 +1,10 @@
 <template>
   <div>
     <Wrapper>
-      <v-row
-        cols="12"
-        class="py-10"
-      >
-        <v-col
-          cols="12"
-          xs="12"
-          md="6"
-          class="text-md-left text-center"
-        >
+      <v-row cols="12" class="py-10">
+        <v-col cols="12" xs="12" md="6" class="text-md-left text-center">
           <h1>
-            {{ $t('frontpage.title') }}
+            {{ $t("frontpage.title") }}
           </h1>
           <p
             :class="{ 'responsive-text': $vuetify.breakpoint.smAndDown }"
@@ -23,36 +15,33 @@
             v-html="$t('frontpage.description.info')"
           />
 
-          <v-btn
+          <!-- <v-btn
             x-large
             color="#0070f3"
             :to="localePath('/test')"
             dark
             class="mt-7"
           >
-            {{ $t('frontpage.call_to_action') }}
-          </v-btn>
-          <br>
+            START THE TEST NOW
+          </v-btn> -->
+          <br />
           <div
             class="ml-2 mt-2 grey--text text--darken-2"
             v-html="$t('frontpage.no_registration')"
           />
         </v-col>
-        <v-col
-          cols="12"
-          xs="12"
-          md="6"
-          class="text-center"
-        >
-          <img
+        <v-col cols="12" xs="12" md="6" class="text-center">
+          <!-- <img
             class="responsive"
             alt="Girl infront of test"
             :src="require('@/assets/front.svg')"
-          >
+          > -->
+
+          <SignUp />
         </v-col>
       </v-row>
     </Wrapper>
-    <Wrapper background="#e4e4e4">
+    <!-- <Wrapper background="#e4e4e4">
       <v-row
         cols="12"
         class="py-10"
@@ -70,8 +59,8 @@
           <Highlights />
         </v-col>
       </v-row>
-    </Wrapper>
-    <Wrapper background="white">
+    </Wrapper> -->
+    <!-- <Wrapper background="white">
       <v-row
         cols="12"
         :class="{ 'flex-column-reverse': $vuetify.breakpoint.smAndDown }"
@@ -138,37 +127,64 @@
           <ShareLinks />
         </v-col>
       </v-row>
-    </Wrapper>
+    </Wrapper> -->
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex";
+import SignUp from "../components/form/SignUp.vue";
+import SignUp1 from "../components/form/SignUp.vue";
 
 export default {
-  name: 'Home',
-  head () {
+  name: "Home",
+  head() {
     return {
-      title: this.$t('frontpage.seo.title'),
+      title: "Talent Acquisition Partners &#8211; Direct Search Specialist",
       meta: [
-        { hid: 'title', name: 'title', content: this.$t('frontpage.seo.title') },
-        { hid: 'description', name: 'description', content: this.$t('frontpage.seo.description') },
-        { hid: 'keywords', name: 'keywords', content: this.$t('seo.keywords') },
+        {
+          hid: "title",
+          name: "title",
+          content: this.$t("frontpage.seo.title")
+        },
+        {
+          hid: "description",
+          name: "description",
+          content: this.$t("frontpage.seo.description")
+        },
+        { hid: "keywords", name: "keywords", content: this.$t("seo.keywords") },
         // Open Graph
-        { hid: 'og:title', name: 'og:title', content: this.$t('frontpage.seo.title') },
-        { hid: 'og:description', name: 'og:description', content: this.$t('frontpage.seo.description') },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.$t('frontpage.seo.title') },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.$t('frontpage.seo.description') }
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: this.$t("frontpage.seo.title")
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.$t("frontpage.seo.description")
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.$t("frontpage.seo.title")
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.$t("frontpage.seo.description")
+        }
       ]
-    }
+    };
   },
   computed: {
-    ...mapState(['development'])
+    ...mapState(["development"])
   },
-  mounted () {
-    this.$amplitude.getInstance().logEvent('b5.frontpage.loaded')
-  }
-}
+  mounted() {
+    this.$amplitude.getInstance().logEvent("b5.frontpage.loaded");
+  },
+  components: { SignUp, SignUp1 }
+};
 </script>
 
 <style scoped>
@@ -180,7 +196,7 @@ p {
 .responsive-text {
   padding-top: 10px;
   font-size: 18px;
-  line-height: 1.0;
+  line-height: 1;
 }
 
 .responsive {
@@ -196,5 +212,4 @@ p {
 .default-width {
   max-width: 960px;
 }
-
 </style>
