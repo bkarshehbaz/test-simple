@@ -32,7 +32,8 @@
             </a>
           </v-col>
           <v-col class="footer-text" cols="12">
-            © {{ new Date().getFullYear() }} — Tapartners - all rights reserved.
+            © {{ new Date().getFullYear() }} — Talent Acquisition Partners Srl -
+            all rights reserved
           </v-col>
         </v-row>
       </v-col>

@@ -34,11 +34,7 @@ export default {
       },
       { hid: "og:type", name: "og:type", content: "website" },
       { hid: "og:url", name: "og:url", content: "https://bigfive-test.com" },
-      {
-        hid: "og:image",
-        name: "og:image",
-        content: "https://bigfive-test.com/icon.png"
-      },
+
       { hid: "twitter:card", name: "twitter:card", content: "summary" },
       { hid: "twitter:site", name: "twitter:site", content: "@maccyber" },
       {
@@ -64,7 +60,7 @@ export default {
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+      { rel: "icon", type: "image/x-icon", href: "/favicon.png" }
       // { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: true }
     ]
   },

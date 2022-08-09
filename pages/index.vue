@@ -135,13 +135,18 @@
 import { mapState } from "vuex";
 import SignUp from "../components/form/SignUp.vue";
 import SignUp1 from "../components/form/SignUp.vue";
-
+// import image from "../assets/";
 export default {
   name: "Home",
   head() {
     return {
       title: "Talent Acquisition Partners &#8211; Direct Search Specialist",
       meta: [
+        // {
+        //   rel: "icon",
+        //   type: "image/png",
+        //   href: "./assets/TAP_PNG_FAVICON.png"
+        // },
         {
           hid: "title",
           name: "title",

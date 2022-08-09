@@ -1,11 +1,7 @@
 <template>
   <div class="faq">
     <v-list class="d-none">
-      <v-list-item
-        v-for="link of page.toc"
-        :key="link.id"
-        class
-      >
+      <v-list-item v-for="link of page.toc" :key="link.id" class>
         <NuxtLink :to="`#${link.id}`">
           {{ link.text }}
         </NuxtLink>
@@ -17,12 +13,12 @@
 
 <script>
 export default {
-  name: 'FAQ',
-  async asyncData ({ $content }) {
-    const page = await $content('faq').fetch()
-    return { page }
+  name: "FAQ",
+  async asyncData({ $content }) {
+    const page = await $content("faq").fetch();
+    return { page };
   }
-}
+};
 </script>
 
 <style>
