@@ -101,4 +101,7 @@ export default {
   font-size: 1.3rem;
   line-height: 1.9;
 }
+span {
+  color: rgb(59, 136, 178) !important;
+}
 </style>

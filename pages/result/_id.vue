@@ -136,3 +136,9 @@ export default {
   }
 };
 </script>
+<style>
+.v-application .headline,
+.v-application .title {
+  color: rgb(59, 136, 178) !important;
+}
+</style>

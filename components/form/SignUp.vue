@@ -294,4 +294,8 @@ export default {
 .terms-check {
   margin-top: 3px;
 }
+
+#neuroticism span {
+  color: black;
+}
 </style>

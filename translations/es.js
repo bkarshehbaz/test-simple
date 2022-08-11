@@ -12,7 +12,7 @@ export default {
     },
     title: "Prueba de personalidad Big Five",
     call_to_action: "Haz la prueba gratis ahora",
-    no_registration: "*No es necesario registrarse",
+    no_registration: "Una vez completada la prueba, podrá ver los resultados.",
     tests_taken: "Más de 4.000.000 personas han realizado la prueba",
     compare: {
       title: "Compárese con los demás",
@@ -44,7 +44,7 @@ export default {
     },
     description: {
       top:
-        "Aprende a conocerte mejor con un test de personalidad gratuito y open-source",
+        "La siguiente prueba contiene 120 preguntas que estimamos le tomará unos 10 minutos completar.",
       subtop: "el",
       subtop2:
         " es el modelo psicológico más confiable y científicamente validado para medir la personalidad.",
@@ -52,7 +52,7 @@ export default {
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 el inventario es de<i>Johnson's (2014) IPIP NEO-PI-R de 120 elementos</i>.`,
       info:
-        "La siguiente prueba contiene 120 preguntas que estimamos le tomará unos 10 minutos completar.",
+        "Para esas preguntas, no hay respuestas correctas ni incorrectas. Antes de comenzar la prueba, asegúrese de estar en un lugar donde pueda concentrarse sin distracciones.",
       result:
         "Una vez que haya completado la prueba, recibirá un informe de personalidad detallado en los siguientes dominios:",
       tests_taken: "pruebas tomadas hasta ahora"

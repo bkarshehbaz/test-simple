@@ -262,7 +262,7 @@ create the axios calls for emails to external source
       context.commit("SET_LOADING", false);
       context.commit("SET_TEST_ID", id);
       // $nuxt.$router.push({ path: `/result/${id}` });
-      $nuxt.$router.push({ path: `/thank_you` });
+      $nuxt.$router.push({ path: `/result/${id}` });
     } catch (error) {
       context.commit("SET_SNACKBAR", { msg: error.message, type: "error" });
       context.commit("SET_LOADING", false);

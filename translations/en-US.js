@@ -13,7 +13,7 @@ export default {
     title: "Big Five Personality Test",
     call_to_action: "Take the free test now",
     no_registration:
-      "After completing the test, you will receive a link by email to see the results.",
+      "After completing the test, you will be able to view the results.      ",
     tests_taken: "Over 4.000.000 people have taken the test",
     compare: {
       title: "Compare yourself to others",

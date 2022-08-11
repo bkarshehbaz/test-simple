@@ -1,205 +1,218 @@
 export default {
-  language: 'Svenska',
+  language: "Svenska",
   seo: {
-    keywords: 'big five personlighetstest, big 5 personlighetstest, b5 test, bigfive test, gratis, jordan peterson'
+    keywords:
+      "big five personlighetstest, big 5 personlighetstest, b5 test, bigfive test, gratis, jordan peterson"
   },
   frontpage: {
     seo: {
-      title: 'Gratis open source big five personlighetstest',
-      description: 'Ta en gratis, open source Big Five-personlighetstest. Lær å kjenne personlighetstrekkene dine - sammenlign deg med partneren din, kollegene, venner eller familie.'
+      title: "Gratis open source big five personlighetstest",
+      description:
+        "Ta en gratis, open source Big Five-personlighetstest. Lær å kjenne personlighetstrekkene dine - sammenlign deg med partneren din, kollegene, venner eller familie."
     },
-    title: 'Big Five personlighetstest',
-    call_to_action: 'Börja testa',
-    no_registration: '* Ingen registrering krävs',
-    tests_taken: 'Över 4.000.000 personer har tagit testet',
+    title: "Big Five personlighetstest",
+    call_to_action: "Börja testa",
+    no_registration: "",
+    tests_taken: "Över 4.000.000 personer har tagit testet",
     compare: {
-      title: 'Jämför dig med andra',
-      text1: 'Jämför dig själv med din partner, kollegor, vänner eller familj.',
-      text2: 'Lär dig hur du kan skilja dig från andra människor inom de fem domänerna:',
-      action: 'Se jämförelse i praktiken'
+      title: "Jämför dig med andra",
+      text1: "Jämför dig själv med din partner, kollegor, vänner eller familj.",
+      text2:
+        "Lär dig hur du kan skilja dig från andra människor inom de fem domänerna:",
+      action: "Se jämförelse i praktiken"
     },
-    share: 'Dela med dina vänner och ta reda på hur kompatibel du är.',
+    share: "Dela med dina vänner och ta reda på hur kompatibel du är.",
     cards: {
       open: {
-        title: 'Öppen',
-        text: 'Detta är ett öppen källkodsprojekt under MIT-licensen.'
+        title: "Öppen",
+        text: "Detta är ett öppen källkodsprojekt under MIT-licensen."
       },
       free: {
-        title: 'Gratis',
-        text: 'Testet är helt gratis.'
+        title: "Gratis",
+        text: "Testet är helt gratis."
       },
       scientific: {
-        title: 'Vetenskaplig',
-        text: 'Big Five är en validerad i vetenskap och pålitlig psykologisk model.'
+        title: "Vetenskaplig",
+        text:
+          "Big Five är en validerad i vetenskap och pålitlig psykologisk model."
       },
       translated: {
-        title: 'Översättningar',
-        text: 'Testet har översatts till mer än 20 språk. Hjälp till <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">här</a>!'
+        title: "Översättningar",
+        text:
+          'Testet har översatts till mer än 20 språk. Hjälp till <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">här</a>!'
       }
     },
     description: {
-      top: 'Förstå dig själv och andra bättre med ett gratis personlighetstest med öppen källkod.',
-      subtop: '',
-      subtop2: ' är en vetenskaplig och trovärdig psykologisk modell för att mäta personlighet.',
+      top: "Testet som följer har 120 frågor och beräknad tid är 10 minuter.",
+      subtop: "",
+      subtop2:
+        " är en vetenskaplig och trovärdig psykologisk modell för att mäta personlighet.",
       reference: `Tester og evalueringer for bigfive-test.com er hentet fra
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
-      info: 'Testet som följer har 120 frågor och beräknad tid är 10 minuter.',
-      result: 'När du har slutfört testet får du en detaljerad personlighetsrapport inom följande domäner:',
-      tests_taken: 'test utförda hittills'
+      info: "",
+      result:
+        "När du har slutfört testet får du en detaljerad personlighetsrapport inom följande domäner:",
+      tests_taken: "test utförda hittills"
     }
   },
   about: {
     seo: {
       title: 'Om "big five" laget',
-      description: 'BigFive har ett mycket aktivt och engagerat team som ständigt försöker driva BigFive framåt BigFive har ett mycket aktivt och engagerat team som ständigt försöker driva BigFive framåt.'
+      description:
+        "BigFive har ett mycket aktivt och engagerat team som ständigt försöker driva BigFive framåt BigFive har ett mycket aktivt och engagerat team som ständigt försöker driva BigFive framåt."
     }
   },
   toolbar: {
-    home: 'Hem',
-    result: 'Resultater',
-    compare: 'Jämförelse',
-    articles: 'Artiklar',
-    privacy: 'Personvern',
-    about: 'Om',
-    see_results: 'Se resultat',
-    compare_with: 'Se jämförelse'
+    home: "Hem",
+    result: "Resultater",
+    compare: "Jämförelse",
+    articles: "Artiklar",
+    privacy: "Personvern",
+    about: "Om",
+    see_results: "Se resultat",
+    compare_with: "Se jämförelse"
   },
   facets: {
     openness_to_experience: {
-      title: 'Öppenhet för upplevelse'
+      title: "Öppenhet för upplevelse"
     },
     conscientiousness: {
-      title: 'Samvetsgrannhet'
+      title: "Samvetsgrannhet"
     },
     extraversion: {
-      title: 'Extraversion'
+      title: "Extraversion"
     },
     agreeableness: {
-      title: 'Tillmötesgående'
+      title: "Tillmötesgående"
     },
     neuroticism: {
-      title: 'Nevrotisisme'
+      title: "Nevrotisisme"
     }
   },
   common: {
-    and: 'och',
-    pages: 'sidor',
-    languages: 'språk'
+    and: "och",
+    pages: "sidor",
+    languages: "språk"
   },
   form: {
-    information: 'information',
-    informationText: 'Svaren du ger används för att ge dig ett',
-    mostAccurate: 'ett så exakt resultat som möjligt',
-    readMoreAbout: 'Läs mer om',
-    privacy: 'Personvern',
-    nextButton: 'OK, neste spørsmål',
-    declineButton: 'fortsett uten å dele',
-    prefferedLanguage: 'Mitt föredragna språk är',
-    selectLanguage: 'Välj ditt språk',
-    iama: 'Jeg er en',
-    male: 'Mann',
-    female: 'Kvinne',
-    age: 'Ålder',
-    iam: 'Jag är',
-    yearsOld: 'år gammal',
-    ageWarning: 'Du måste vara 16 år eller äldre',
-    language: 'Språk',
-    gender: 'Kjønn',
-    confirmInfo: 'Bekreft informasjon',
-    confirm: 'Bekreft',
-    toTestButton: 'Åreit! Ta meg til testen'
+    information: "information",
+    informationText: "Svaren du ger används för att ge dig ett",
+    mostAccurate: "ett så exakt resultat som möjligt",
+    readMoreAbout: "Läs mer om",
+    privacy: "Personvern",
+    nextButton: "OK, neste spørsmål",
+    declineButton: "fortsett uten å dele",
+    prefferedLanguage: "Mitt föredragna språk är",
+    selectLanguage: "Välj ditt språk",
+    iama: "Jeg er en",
+    male: "Mann",
+    female: "Kvinne",
+    age: "Ålder",
+    iam: "Jag är",
+    yearsOld: "år gammal",
+    ageWarning: "Du måste vara 16 år eller äldre",
+    language: "Språk",
+    gender: "Kjønn",
+    confirmInfo: "Bekreft informasjon",
+    confirm: "Bekreft",
+    toTestButton: "Åreit! Ta meg til testen"
   },
   test: {
-    next: 'nästa',
-    back: 'tillbaka',
-    more: 'mer',
-    seeResults: 'Se resultat'
+    next: "nästa",
+    back: "tillbaka",
+    more: "mer",
+    seeResults: "Se resultat"
   },
   big_five: {
-    title: 'Hva er de store fem?',
+    title: "Hva er de store fem?",
     seo: {
-      title: 'Hva er de store fem?',
-      description: 'Les mer om de store fem'
+      title: "Hva er de store fem?",
+      description: "Les mer om de store fem"
     }
   },
   openness_to_experience: {
-    title: 'Öppenhet för upplevelse',
+    title: "Öppenhet för upplevelse",
     seo: {
-      title: 'Oversikt over domenet Åpenhet for erfaringer',
-      description: 'Les mer om domenet åpenhet for erfaringer i bigfive modellen'
+      title: "Oversikt over domenet Åpenhet for erfaringer",
+      description:
+        "Les mer om domenet åpenhet for erfaringer i bigfive modellen"
     }
   },
   conscientiousness: {
-    title: 'Samvetsgrannhet',
+    title: "Samvetsgrannhet",
     seo: {
-      title: 'Oversikt over domenet Samvetsgrannhet',
-      description: 'Les mer om domenet Samvetsgrannhet i bigfive modellen'
+      title: "Oversikt over domenet Samvetsgrannhet",
+      description: "Les mer om domenet Samvetsgrannhet i bigfive modellen"
     }
   },
   extraversion: {
-    title: 'Extraversion',
+    title: "Extraversion",
     seo: {
-      title: 'Oversikt over domenet extraversion',
-      description: 'Les mer om domenet extraversion i bigfive modellen'
+      title: "Oversikt over domenet extraversion",
+      description: "Les mer om domenet extraversion i bigfive modellen"
     }
   },
   agreeableness: {
-    title: 'Tillmötesgående',
+    title: "Tillmötesgående",
     seo: {
-      title: 'Oversikt over domenet Tillmötesgående',
-      description: 'Les mer om domenet Tillmötesgående i bigfive modellen'
+      title: "Oversikt over domenet Tillmötesgående",
+      description: "Les mer om domenet Tillmötesgående i bigfive modellen"
     }
   },
   neuroticism: {
-    title: 'Nevrotisisme',
+    title: "Nevrotisisme",
     seo: {
-      title: 'Oversikt over domenet Nevrotisisme',
-      description: 'Les mer om domenet Nevrotisisme i bigfive modellen'
+      title: "Oversikt over domenet Nevrotisisme",
+      description: "Les mer om domenet Nevrotisisme i bigfive modellen"
     }
   },
   getCompare: {
-    title: 'Jämför personer eller grupper',
-    description1: 'Jämför dina resultat från personlighetstestet med flera andra.',
-    description2: 'Klistra in ID som du fick från testet, t.ex.',
-    description3: 'i ID-tekstfeltet',
-    needToAddPeople: 'Du måste lägga till personer för att jämföra dem.',
-    addAnother: 'Lägg till en annan person',
-    addPerson: 'Lägg till person',
-    comparePeople: 'Jämför människor',
-    nameOfPerson: 'Personens namn',
-    urlOrId: 'Länk eller ID för resultat',
-    name: 'Mamn'
+    title: "Jämför personer eller grupper",
+    description1:
+      "Jämför dina resultat från personlighetstestet med flera andra.",
+    description2: "Klistra in ID som du fick från testet, t.ex.",
+    description3: "i ID-tekstfeltet",
+    needToAddPeople: "Du måste lägga till personer för att jämföra dem.",
+    addAnother: "Lägg till en annan person",
+    addPerson: "Lägg till person",
+    comparePeople: "Jämför människor",
+    nameOfPerson: "Personens namn",
+    urlOrId: "Länk eller ID för resultat",
+    name: "Mamn"
   },
   results: {
-    theBigFive: 'De fem store',
-    score: 'Score',
-    important: 'Viktig!',
-    saveResults: 'Spara följande ID för att se dina resultat senare eller till',
-    compare: 'jämföra',
-    toOthers: 'du med andra',
+    theBigFive: "De fem store",
+    score: "Score",
+    important: "Viktig!",
+    saveResults: "Spara följande ID för att se dina resultat senare eller till",
+    compare: "jämföra",
+    toOthers: "du med andra",
     seo: {
-      title: 'Min rapport från Big Five personlighetstest',
-      description: 'Se min personlighet och jämför dig på följande fem domäner: Neurotism, öppenhet för upplevelse, planeradhet, extraversion och mänsklighet'
+      title: "Min rapport från Big Five personlighetstest",
+      description:
+        "Se min personlighet och jämför dig på följande fem domäner: Neurotism, öppenhet för upplevelse, planeradhet, extraversion och mänsklighet"
     }
   },
   getResult: {
-    result: 'Få resultat',
-    explanation: 'Hvis du tidligere har tatt testen, og lagret ID-en, kan du se resultatene dine her ved å lime inn ID-en du fikk f.eks.',
-    idInput: 'i ID-textrutan',
-    urlOrId: 'Resultatets länk eller ID',
-    getResult: 'Få resultat',
-    viewPrevious: 'Visa föregående resultat'
+    result: "Få resultat",
+    explanation:
+      "Hvis du tidligere har tatt testen, og lagret ID-en, kan du se resultatene dine her ved å lime inn ID-en du fikk f.eks.",
+    idInput: "i ID-textrutan",
+    urlOrId: "Resultatets länk eller ID",
+    getResult: "Få resultat",
+    viewPrevious: "Visa föregående resultat"
   },
   shareLinks: {
-    copyLink: 'Kopiera länk',
-    shareFacebook: 'Dela på Facebook',
-    shareTwitter: 'Dela på Twitter',
-    copiedLink: 'Kopiera länk',
-    shareResults: 'Del dine resultater!'
+    copyLink: "Kopiera länk",
+    shareFacebook: "Dela på Facebook",
+    shareTwitter: "Dela på Twitter",
+    copiedLink: "Kopiera länk",
+    shareResults: "Del dine resultater!"
   },
   opennessToExperience: {
-    quote: 'Åpenhet for erfaringer beskriver en dimensjon av en kognitiv stil der fantasi skiller kreative mennesker fra jordnære, konvensjonelle mennesker.',
+    quote:
+      "Åpenhet for erfaringer beskriver en dimensjon av en kognitiv stil der fantasi skiller kreative mennesker fra jordnære, konvensjonelle mennesker.",
     text1: `
     <p>
       Åpne mennesker er intellektuelt nysgjerrige, setter pris på kunst, og de verdsetter skjønnhet.
@@ -302,4 +315,4 @@ innholdet er fra <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       </p>
     `
   }
-}
+};

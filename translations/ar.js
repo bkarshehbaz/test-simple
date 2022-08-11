@@ -1,205 +1,218 @@
 export default {
-  language: 'Arabic',
+  language: "Arabic",
   seo: {
-    keywords: 'big five personality test, big 5 personality test, b5 test, bigfive test, personality traits, bigfive, compare, free, jordan peterson'
+    keywords:
+      "big five personality test, big 5 personality test, b5 test, bigfive test, personality traits, bigfive, compare, free, jordan peterson"
   },
   frontpage: {
     seo: {
-      title: 'Free open-source BigFive personality traits test',
-      description: 'Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family.'
+      title: "Free open-source BigFive personality traits test",
+      description:
+        "Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family."
     },
-    title: 'اختبار السمات الخمسة الكبرى للشخصية',
-    call_to_action: 'ابدأ الاختبار الآن مجاناً',
-    no_registration: '* لا يتطلب التسجيل',
-    tests_taken: 'أكثر من ٧٠٠,٠٠٠ أخذوا الاختبار',
+    title: "اختبار السمات الخمسة الكبرى للشخصية",
+    call_to_action: "ابدأ الاختبار الآن مجاناً",
+    no_registration: "",
+    tests_taken: "أكثر من ٧٠٠,٠٠٠ أخذوا الاختبار",
     compare: {
-      title: 'قارن شخصيتك بشخصية غيرك',
-      text1: 'قارن شخصيتك بشخصية شريكك أو زميلك أو صديقك',
-      text2: 'اعرف ما يميّزك عن غيرك في السمات الخمسة',
-      action: 'شاهد عينة'
+      title: "قارن شخصيتك بشخصية غيرك",
+      text1: "قارن شخصيتك بشخصية شريكك أو زميلك أو صديقك",
+      text2: "اعرف ما يميّزك عن غيرك في السمات الخمسة",
+      action: "شاهد عينة"
     },
-    share: 'شاركها مع أصدقائك واكتشف مدى التوافق بينكم',
+    share: "شاركها مع أصدقائك واكتشف مدى التوافق بينكم",
     cards: {
       open: {
-        title: 'مفتوح',
-        text: 'MIT هذا مشروع مفتوح المصدر تحت ترخيص'
+        title: "مفتوح",
+        text: "MIT هذا مشروع مفتوح المصدر تحت ترخيص"
       },
       free: {
-        title: 'مجاني',
-        text: 'الاختبار مجاني تماماً'
+        title: "مجاني",
+        text: "الاختبار مجاني تماماً"
       },
       scientific: {
-        title: 'علمي',
-        text: 'نموذج السمات الخمسة في علم النفس هو نموذج علمي محقّق وموثوق'
+        title: "علمي",
+        text: "نموذج السمات الخمسة في علم النفس هو نموذج علمي محقّق وموثوق"
       },
       translated: {
-        title: 'مترجم',
-        text: 'الاختبار مترجم إلى أكثر من ٢٠ لغة. بإمكانك المساعدة <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">here</a>!'
+        title: "مترجم",
+        text:
+          'الاختبار مترجم إلى أكثر من ٢٠ لغة. بإمكانك المساعدة <a href="https://b5.translations.alheimsins.net/" rel="noreferrer" target="blank">here</a>!'
       }
     },
     description: {
-      top: 'تعرّف على نفسك أكثر عن طريق هذا الاختبار المجاني ومفتوح المصدر',
-      subtop: 'The',
-      subtop2: ' is the most scientifically validated and reliable psychological model to measure personality.',
+      top: "الاختبار يحتوي على ١٢٠ سؤال وسيستغرق منك إتمامه حوالي ١٠ دقائق",
+      subtop: "The",
+      subtop2:
+        " is the most scientifically validated and reliable psychological model to measure personality.",
       reference: `Tests and evaluation for this site is gathered from
 <a href="http://ipip.ori.org" rel="noopener" target="_blank">ipip.ori.org</a>,
 inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
-      info: 'الاختبار يحتوي على ١٢٠ سؤال وسيستغرق منك إتمامه حوالي ١٠ دقائق',
-      result: 'After you have completed the test you will receive a detailed personality report in the following domains:',
-      tests_taken: 'tests taken so far'
+      info: "",
+      result:
+        "After you have completed the test you will receive a detailed personality report in the following domains:",
+      tests_taken: "tests taken so far"
     }
   },
   about: {
     seo: {
-      title: 'About and the big five team',
-      description: 'BigFive has a very active and engaged team that is constantly striving to push BigFive forward.'
+      title: "About and the big five team",
+      description:
+        "BigFive has a very active and engaged team that is constantly striving to push BigFive forward."
     }
   },
   toolbar: {
-    home: 'Home',
-    result: 'النتيجة',
-    compare: 'قارن',
-    articles: 'مقالات',
-    privacy: 'الخصوصية',
-    about: 'عنّا',
-    see_results: 'شاهد نتيجتك',
-    compare_with: 'قارن مع غيرك'
+    home: "Home",
+    result: "النتيجة",
+    compare: "قارن",
+    articles: "مقالات",
+    privacy: "الخصوصية",
+    about: "عنّا",
+    see_results: "شاهد نتيجتك",
+    compare_with: "قارن مع غيرك"
   },
   facets: {
     openness_to_experience: {
-      title: 'الانفتاح'
+      title: "الانفتاح"
     },
     conscientiousness: {
-      title: 'اليقظة/التفاني'
+      title: "اليقظة/التفاني"
     },
     extraversion: {
-      title: 'الانبساطية'
+      title: "الانبساطية"
     },
     agreeableness: {
-      title: 'المسايرة/الطيبة'
+      title: "المسايرة/الطيبة"
     },
     neuroticism: {
-      title: 'العُصابية'
+      title: "العُصابية"
     }
   },
   common: {
-    and: 'و',
-    pages: 'صفحات',
-    languages: 'اللغات'
+    and: "و",
+    pages: "صفحات",
+    languages: "اللغات"
   },
   form: {
-    information: 'Information',
-    informationText: 'We use the information you provide to serve you the',
-    mostAccurate: 'most accurate result possible',
-    readMoreAbout: 'Read more about',
-    privacy: 'privacy',
-    nextButton: 'Okey, next question',
-    declineButton: 'continue without sharing',
-    prefferedLanguage: 'لغتي المفضلة هي',
-    selectLanguage: 'اختر اللغة',
-    iama: 'I am a',
-    male: 'Male',
-    female: 'Female',
-    age: 'Age',
-    iam: 'I am',
-    yearsOld: 'years old',
-    ageWarning: 'You must be 16 or older',
-    language: 'اللغة',
-    gender: 'Gender',
-    confirmInfo: 'Confirm information',
-    confirm: 'Confirm',
-    toTestButton: 'Alrighty, take me to the test'
+    information: "Information",
+    informationText: "We use the information you provide to serve you the",
+    mostAccurate: "most accurate result possible",
+    readMoreAbout: "Read more about",
+    privacy: "privacy",
+    nextButton: "Okey, next question",
+    declineButton: "continue without sharing",
+    prefferedLanguage: "لغتي المفضلة هي",
+    selectLanguage: "اختر اللغة",
+    iama: "I am a",
+    male: "Male",
+    female: "Female",
+    age: "Age",
+    iam: "I am",
+    yearsOld: "years old",
+    ageWarning: "You must be 16 or older",
+    language: "اللغة",
+    gender: "Gender",
+    confirmInfo: "Confirm information",
+    confirm: "Confirm",
+    toTestButton: "Alrighty, take me to the test"
   },
   test: {
-    next: 'التالي',
-    back: 'السابق',
-    more: 'أكثر',
-    seeResults: 'شاهد النتيجة'
+    next: "التالي",
+    back: "السابق",
+    more: "أكثر",
+    seeResults: "شاهد النتيجة"
   },
   big_five: {
-    title: 'What are the big five?',
+    title: "What are the big five?",
     seo: {
-      title: 'What are the big five?',
-      description: 'Read more about the big five'
+      title: "What are the big five?",
+      description: "Read more about the big five"
     }
   },
   openness_to_experience: {
-    title: 'الانفتاحية',
+    title: "الانفتاحية",
     seo: {
-      title: 'Overview of the domain Openness To Experience.',
-      description: 'Read more about the Openness To Experience domain in the b5 model'
+      title: "Overview of the domain Openness To Experience.",
+      description:
+        "Read more about the Openness To Experience domain in the b5 model"
     }
   },
   conscientiousness: {
-    title: 'اليقظة/التفاني',
+    title: "اليقظة/التفاني",
     seo: {
-      title: 'Overview of the domain Conscientiousness',
-      description: 'Read more about the Conscientiousness domain in the b5 model'
+      title: "Overview of the domain Conscientiousness",
+      description:
+        "Read more about the Conscientiousness domain in the b5 model"
     }
   },
   extraversion: {
-    title: 'الانبساطية',
+    title: "الانبساطية",
     seo: {
-      title: 'Overview of the domain Extraversion',
-      description: 'Read more about the Extraversion domain in the b5 model'
+      title: "Overview of the domain Extraversion",
+      description: "Read more about the Extraversion domain in the b5 model"
     }
   },
   agreeableness: {
-    title: 'المسايرة/الطيبة',
+    title: "المسايرة/الطيبة",
     seo: {
-      title: 'Overview of the domain Agreeableness',
-      description: 'Read more about the agreeableness domain in the b5 model'
+      title: "Overview of the domain Agreeableness",
+      description: "Read more about the agreeableness domain in the b5 model"
     }
   },
   neuroticism: {
-    title: 'العُصابية',
+    title: "العُصابية",
     seo: {
-      title: 'Overview of the domain Neuroticism',
-      description: 'Read more about the Neuroticism domain in the b5 model'
+      title: "Overview of the domain Neuroticism",
+      description: "Read more about the Neuroticism domain in the b5 model"
     }
   },
   getCompare: {
-    title: 'قم بالمقارنة بين الأفراد والمجموعات',
-    description1: 'قم بمقارنة نتائج اختبار السمات الخمسة الكبرى للشخصية بين عدة أفراد',
-    description2: 'ضع الرمز الذي حصلت عليه من نتيجة الاختبار، مثل ',
-    description3: ' في الحقل المناسب',
-    needToAddPeople: 'لتمكين المقارنة يجب إضافة أكثر من شخص',
-    addAnother: 'أضف شخص آخر',
-    addPerson: 'أضف شخص',
-    comparePeople: 'قارن',
-    nameOfPerson: 'اسم الشخص',
-    urlOrId: 'رابط أو رمز النتيجة',
-    name: 'الاسم'
+    title: "قم بالمقارنة بين الأفراد والمجموعات",
+    description1:
+      "قم بمقارنة نتائج اختبار السمات الخمسة الكبرى للشخصية بين عدة أفراد",
+    description2: "ضع الرمز الذي حصلت عليه من نتيجة الاختبار، مثل ",
+    description3: " في الحقل المناسب",
+    needToAddPeople: "لتمكين المقارنة يجب إضافة أكثر من شخص",
+    addAnother: "أضف شخص آخر",
+    addPerson: "أضف شخص",
+    comparePeople: "قارن",
+    nameOfPerson: "اسم الشخص",
+    urlOrId: "رابط أو رمز النتيجة",
+    name: "الاسم"
   },
   results: {
-    theBigFive: 'السمات الخمسة الكبرى',
-    score: 'الدرجة',
-    important: '!مهم',
-    saveResults: 'احفط الرمز التالي لتتمكن من رؤية نتيجتك في وقت لاحق أو لتتمكن من ',
-    compare: 'مقارنة ',
-    toOthers: 'نتيجتك بغيرك ',
+    theBigFive: "السمات الخمسة الكبرى",
+    score: "الدرجة",
+    important: "!مهم",
+    saveResults:
+      "احفط الرمز التالي لتتمكن من رؤية نتيجتك في وقت لاحق أو لتتمكن من ",
+    compare: "مقارنة ",
+    toOthers: "نتيجتك بغيرك ",
     seo: {
-      title: 'My results from the BigFive personality test',
-      description: 'See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness'
+      title: "My results from the BigFive personality test",
+      description:
+        "See my personality and compare yourself in the following five domains: Neuroticism, Openness To Experience, Conscientiousness, Extraversion, Agreeableness"
     }
   },
   getResult: {
-    result: 'النتيجة',
-    explanation: 'سبق وأخذت الاختبار واحتفظت برمز النتيجة؟ يمكنك تحصيل نتيجتك هنا عن طريق إدخال رمز النتيجة مثل ',
-    idInput: ' في الحقل أدناه',
-    urlOrId: 'رابط أو رمز النتيجة',
-    getResult: 'احصل على النتيجة',
-    viewPrevious: 'عرض النتيجة السابقة'
+    result: "النتيجة",
+    explanation:
+      "سبق وأخذت الاختبار واحتفظت برمز النتيجة؟ يمكنك تحصيل نتيجتك هنا عن طريق إدخال رمز النتيجة مثل ",
+    idInput: " في الحقل أدناه",
+    urlOrId: "رابط أو رمز النتيجة",
+    getResult: "احصل على النتيجة",
+    viewPrevious: "عرض النتيجة السابقة"
   },
   shareLinks: {
-    copyLink: 'انسخ الرابط',
-    shareFacebook: 'Facebook شارك على',
-    shareTwitter: 'Twitter شارك على',
-    copiedLink: 'تم النسخ',
-    shareResults: '!شارك نتيجتك'
+    copyLink: "انسخ الرابط",
+    shareFacebook: "Facebook شارك على",
+    shareTwitter: "Twitter شارك على",
+    copiedLink: "تم النسخ",
+    shareResults: "!شارك نتيجتك"
   },
   opennessToExperience: {
-    quote: 'Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.',
+    quote:
+      "Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.",
     text1: `
       <p>
         Openness to Experience describes a dimension of cognitive style that distinguishes imaginative, creative people from down-to-earth, conventional people.
@@ -325,4 +338,4 @@ inventory is from <i>Johnson's (2014) 120-item IPIP NEO-PI-R</i>.`,
       </p>
     `
   }
-}
+};
