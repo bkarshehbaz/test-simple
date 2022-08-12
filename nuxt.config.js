@@ -5,15 +5,14 @@ export default {
    */
   head: {
     titleTemplate: "%s - Big Five",
-    title: "Free open-source BigFive personality traits test",
+    title: "Talent Acquisition Partners - Test Big5",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content:
-          "Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family."
+        content: "The test takes only 10 minutes and is mobile friendly."
       },
       {
         hid: "keywords",
@@ -24,13 +23,12 @@ export default {
       {
         hid: "og:title",
         name: "og:title",
-        content: "Free open-source BigFive personality traits test"
+        content: "Talent Acquisition Partners - Test Big5"
       },
       {
         hid: "og:description",
         name: "og:description",
-        content:
-          "Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family"
+        content: "The test takes only 10 minutes and is mobile friendly."
       },
       { hid: "og:type", name: "og:type", content: "website" },
       { hid: "og:url", name: "og:url", content: "https://bigfive-test.com" },
@@ -40,13 +38,12 @@ export default {
       {
         hid: "twitter:title",
         name: "twitter:title",
-        content: "Free open-source BigFive personality traits test"
+        content: "Talent Acquisition Partners - Test Big5"
       },
       {
         hid: "twitter:description",
         name: "twitter:description",
-        content:
-          "Take a free, open-source Big Five personality test. Learn to know your personality traits and compare yourself with your partner, colleagues, friends or family"
+        content: "The test takes only 10 minutes and is mobile friendly."
       },
       {
         hid: "twitter:image",
