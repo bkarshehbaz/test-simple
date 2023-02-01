@@ -249,7 +249,7 @@ create the axios calls for emails to external source
 */
 
       this.$axios.$post(
-        "https://tank-sensor-test.herokuapp.com/api/emails/testresult",
+        "https://tapartners.herokuapp.com/api/emails/testresult",
         {
           name: context.state.name,
           surname: context.state.surname,
